@@ -1,0 +1,174 @@
+/* ========== GLOBAL RESET ========== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1f2937;
+}
+
+/* ========== LINKS ========== */
+a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========== PAGE CONTAINER ========== */
+.page {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  box-shadow:
+    0 10px 30px rgba(79, 70, 229, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== HEADINGS ========== */
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #111827;
+}
+
+/* ========== INPUTS ========== */
+.input,
+input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  background: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.input:focus,
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* ========== BUTTONS ========== */
+.btn,
+button {
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.35);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(99, 102, 241, 0.45);
+}
+
+button:disabled {
+  background: #9ca3af;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* ========== FEEDBACK TEXT ========== */
+.success {
+  color: #16a34a;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+.loading {
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+/* ========== CARDS (BOOKINGS / EVENTS) ========== */
+.card {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* ========== STATUS BADGES ========== */
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.assigned {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.status.in_progress {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status.completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.failed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* ========== SMALL TEXT ========== */
+small {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ========== MOBILE FRIENDLY ========== */
+@media (max-width: 640px) {
+  .page {
+    margin: 20px;
+    padding: 24px;
+  }
+}
